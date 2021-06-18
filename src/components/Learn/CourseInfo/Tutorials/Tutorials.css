@@ -1,0 +1,21 @@
+.tutorial-header{
+    background-image: linear-gradient(90deg,#FF3684, #FFC203);
+    width: 100%;
+    height: 300px;
+}
+.tutorial-card{
+    display: flex !important;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg,#252478, #5C5B9C);
+    margin: 10px 25px;
+    padding: 3px ;
+    border-radius: 10px;
+    color: white;
+}
+.video-description{
+    margin:15px 30px;
+    background-image: linear-gradient(180deg,#252478, #5C5B9C);
+    padding: 25px;
+    border-radius: 15px;
+
+}

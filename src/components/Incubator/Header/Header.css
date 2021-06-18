@@ -1,0 +1,22 @@
+.header{
+    background: url(../../../images/Headerbg.png);
+    /* height: 370px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+
+}
+.header-text {
+    color: white;
+    text-align: right;
+    padding: 100px 200px;
+    border: 2px solid white;
+    
+}
+.header-text h1{
+    font-size: 5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}

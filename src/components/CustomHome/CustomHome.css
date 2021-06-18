@@ -1,0 +1,24 @@
+.customhome{
+    background-image: url(../../images/blockchain1.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    
+}
+.customhome>div{
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+}
+.customhome>div button{
+    padding: 5px 15px;
+    background-color:lightgoldenrodyellow;
+    border-radius: 10px;
+    margin: 0 20px;
+}

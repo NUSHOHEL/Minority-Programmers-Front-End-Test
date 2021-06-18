@@ -1,0 +1,48 @@
+.courseinfo{
+    display: flex;
+    /* flex-flow: column wrap; */
+}
+.side-bar{
+    width: 25%;
+    height: 100%;
+    background:#151371;
+    color: white;
+    /* margin-left: 20px; */
+}
+.course-progress{
+    width: 75%;
+    height: 935px;
+    background: #151371;
+    overflow: auto;
+    direction:rtl;
+}
+.module{
+    direction: ltr;
+}
+.module-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg,#FF3684, #FFC203) !important;
+    width: 100%;
+    height: 400px;
+    padding: 70px;
+}
+.modules-list ul li{
+    display: inline;
+    font-size: 30px;
+    color: white;
+    margin-left: 40px;
+}
+
+ .single-module{
+     color: white;
+     margin: 10px 40px;
+     border-radius: 15px;
+     text-align: center;
+     
+ }
+ .module-card{
+     background-image: linear-gradient(180deg,#252478, #5C5B9C);
+     border-radius: 10px;
+ }

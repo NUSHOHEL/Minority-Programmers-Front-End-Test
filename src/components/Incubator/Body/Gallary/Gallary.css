@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+.Gallary-container{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.Gallary-container button{
+    background-color:transparent;
+    padding: 1px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.Gallary-one{
+    background-image: url(../../../../images/Gallary1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    padding: 100px 0;
+}
+.Gallary-tow{
+    background-image: url(../../../../images/Gallary2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    padding: 100px 0;
+}
+.Gallary-three{
+    background-image: url(../../../../images/Gallary3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    padding: 100px 0;
+}
