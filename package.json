@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.14.1",
@@ -15,6 +17,7 @@
     "react-bootstrap": "^1.6.1",
     "react-circular-progressbar": "^2.0.4",
     "react-dom": "^17.0.2",
+    "react-lottie": "^1.2.3",
     "react-multi-carousel": "^2.6.3",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",

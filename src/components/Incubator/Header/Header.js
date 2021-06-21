@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='header-text'>
-            <h1>invest directly into <br /> minority invention</h1>
-            <button className='btn btn-primary'>View Startups</button>
+            <h1>Invest directly into <br /> Minority invention</h1>
+            <button>View Startups</button>
             </div>
         </div>
     );

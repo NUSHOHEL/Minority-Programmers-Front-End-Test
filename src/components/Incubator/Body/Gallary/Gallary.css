@@ -23,6 +23,7 @@
     height: 200px;
     text-align: center;
     padding: 100px 0;
+    margin-top: 10px;                
 }
 .Gallary-tow{
     background-image: url(../../../../images/Gallary2.png);
@@ -33,6 +34,7 @@
     height: 200px;
     text-align: center;
     padding: 100px 0;
+    margin-top: 10px;
 }
 .Gallary-three{
     background-image: url(../../../../images/Gallary3.png);
@@ -43,4 +45,5 @@
     height: 200px;
     text-align: center;
     padding: 100px 0;
+    margin-top: 10px;
 }

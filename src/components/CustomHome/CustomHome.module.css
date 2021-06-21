@@ -1,0 +1,28 @@
+.header{
+    position: relative;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    height: 500px;
+    /* border: 2px solid white; */
+}
+.header>div{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 2px solid red; */
+    width: 80%;
+}
+.header>div h1{
+    font-weight: bolder;
+}
+.header>div button{
+    margin:auto 10px;
+    background-color: #151371;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.header>div button>Link{
+    color:white;
+}

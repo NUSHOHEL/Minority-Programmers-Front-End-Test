@@ -17,7 +17,8 @@ const CommingStartup = () => {
            </div>
           </Col>
           {
-                fakestartup.map(company=> <Col sm={3} style={{width:'200px'}} className='card '>
+                fakestartup.map(company=> <Col sm={3} >
+                    <div className='card mt-3'>
                     <div className='p-2'>
                         <div className='d-flex align-items-center'>
                             <img src={company.logo} alt="" />
@@ -34,6 +35,7 @@ const CommingStartup = () => {
                             <button className='btn btn-primary'> <Link to='/incubator'style={{color:'white'}}>Fund Startup</Link> </button>
                             <button className='btn btn-primary'><Link to='/incubator' style={{color:'white'}}>Learn More</Link></button>
                         </div>
+                    </div>
                     </div>
                 </Col>)
           }

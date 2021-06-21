@@ -40,7 +40,7 @@ const Tutorials = () => {
                             }
                            </div>
 
-                            <div style={{marginTop:'120px',color:'white'}}>
+                            <div style={{display:player? "block":"none",marginTop:'120px',color:'white'}}>
                                 <div className='d-flex justify-content-between'>
                                 <span className="ml-3" onClick={()=>setPlayer(!player)} > <FontAwesomeIcon icon={faArrowLeft}/></span>
                                     <span  className="mr-3" onClick={()=>setPlayer(!player)} > <FontAwesomeIcon icon={faArrowRight}/> </span>

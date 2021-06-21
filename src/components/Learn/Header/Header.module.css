@@ -1,0 +1,50 @@
+body{
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    background-image: linear-gradient(90deg, #FF00B8
+,#FF655B,#FFC700
+
+);
+   
+  
+}
+.headerImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 400px;
+    object-fit: cover;
+
+}
+.headerImage img{
+   height: 150%;
+   width: 150%;
+}
+.headerText{
+    position: relative;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    height: 400px;
+    /* border: 2px solid red; */
+    color: white;
+}
+.headerText>div{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 2px solid red; */
+    width: fit-content;
+}
+.headerText>div p{
+    text-align: right;
+}
+.headerText>div span{
+    color:black;
+    font-weight: 900 !important;
+    font-size: 20px;
+}

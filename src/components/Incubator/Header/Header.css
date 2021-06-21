@@ -6,17 +6,27 @@
     background-position: center;
     max-width: 100%;
     height: auto;
+    line-height: 10px;
 
 }
 .header-text {
+    font-family: 'Red Hat Display', sans-serif;
     color: white;
     text-align: right;
     padding: 100px 200px;
     border: 2px solid white;
+    font-size: 10vw;
     
 }
 .header-text h1{
-    font-size: 5vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-   
+    line-break: strict;
+    font-family: 'Red Hat Display', sans-serif;
+    white-space: pre;  
+}
+.header-text button{
+    font-size: 1vw !important;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    
+
 }

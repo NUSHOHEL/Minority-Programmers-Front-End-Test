@@ -3,9 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.startup-container{
-    margin: 50px auto;
-}
+
 .startup-info{
     border: 2px solid red;
     text-align: center;

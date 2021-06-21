@@ -1,18 +1,25 @@
 import React from 'react';
 import headerbg from '../../../images/LearnHeader.png'
-import './Header.css'
+import styles from './Header.module.css'
 
 const LearnHeader = () => {
     return (
-        <div className='learnHeader'>
-            <div className="learnHeader-img">
+        <div className={styles.header}>
+           <div className='row'>
+           <div className={`col-md ${styles.headerImage}`}>
                 <img src={headerbg} alt="" />
             </div>
-            <div className="learnHeader-text">
+           
+            <div className={`col-md order-sm-first order-md-last ${styles.headerText}`}>
+            
+                <div>
                 <h1>Learn high in demand <br />
                     IT Skills & Get Crypto</h1>
-                    <p>powered by KoinStreet</p>
+                    <p>powered by <span>KoinStreet</span></p>
+                </div>
+                
             </div>
+           </div>
         </div>
     );
 };

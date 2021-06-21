@@ -34,7 +34,7 @@ const Body = () => {
                     <input type="text" style={{width:'25%',borderRadius:'10px'}} />
                     <button style={{margin:'25px 5px', padding:'1px 25px', borderRadius:'10px'}}>search</button>
                 </form>
-                <h1 className='ml-3'>My Course</h1>
+                <h1 className='ml-3'>My Course </h1>
                 <Carousel
                     removeArrowOnDeviceType={["tablet", "mobile"]}
                     infinite={true}
@@ -45,7 +45,7 @@ const Body = () => {
                 </Carousel>
             </div>
             <div className='mt-5'>
-            <h1 className='ml-3'>Feature Course</h1>
+            <h1 className='ml-3'>Feature Course </h1>
             <Carousel
                     removeArrowOnDeviceType={["tablet", "mobile"]}
                     infinite={true}

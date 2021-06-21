@@ -12,7 +12,6 @@ import "react-multi-carousel/lib/styles.css";
 const CurrentStartup = () => {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
         },
@@ -31,7 +30,7 @@ const CurrentStartup = () => {
     };
 
     return (
-        <div className="startup-container">
+        <div className="mt-5 p-4">
             <Row>
                 <Col sm={3} className='d-flex align-items-center justify-content-center'>
                     <div className='p-4 ml-4'>
