@@ -14,7 +14,7 @@ const CustomeHome = () => {
         }
       };
     return (
-       <div className='home'>
+       <div className='container'>
             <div className='row' >
             <div className={`col-sm ${styles.header}`}>
                 
@@ -26,7 +26,7 @@ const CustomeHome = () => {
                 </div>
                 
             </div>
-            <div className='col-sm order-1'>
+            <div className={`col-sm order-1 ${styles.header}`}>
             <Lottie options={defaultOptions}
               height={500}
               width={400}

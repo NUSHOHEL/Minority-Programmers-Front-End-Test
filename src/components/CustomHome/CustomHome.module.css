@@ -1,6 +1,5 @@
-.home{
-   box-sizing: border-box;
-   min-height: 100vh !important;
+.container{
+    min-height: 100vh !important;
 }
 .header{
     position: relative;
