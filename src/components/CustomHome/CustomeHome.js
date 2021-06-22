@@ -14,7 +14,7 @@ const CustomeHome = () => {
         }
       };
     return (
-       <div className='container'>
+       <div className='home'>
             <div className='row' >
             <div className={`col-sm ${styles.header}`}>
                 
