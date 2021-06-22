@@ -10,7 +10,7 @@ const LearnHeader = () => {
                 <img src={headerbg} alt="" />
             </div>
            
-            <div className={`col-md order-sm-first order-md-last ${styles.headerText}`}>
+            <div className={`col-md order-sm-1 order-md-2 ${styles.headerText}`}>
             
                 <div>
                 <h1>Learn high in demand <br />

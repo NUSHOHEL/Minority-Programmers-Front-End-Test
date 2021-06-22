@@ -1,38 +1,30 @@
 import React from 'react';
 import './CourseInfo.css'
-import { useState } from 'react';
-import duration from '../../../../CourseDuration';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import mask from '../../../../images/Mask Group.png'
 import tutorialdata from '../../../../TutorialData';
-import Tutorials from '../Tutorials/Tutorials';
+import { Link } from 'react-router-dom';
+import Sidebar from '../Sidebar/Sidebar';
 
 
 
 const CourseInfo = () => {
-    const [resume, setResume]= useState(false)
+    
+
+    const handlemodule=(id)=>{
+        console.log(id)
+        const week= tutorialdata.find(data=> data.id === id)
+        console.log(week)
+    }
     return (
-        <div className="courseinfo">
+        <div className="courseinfo"> 
             <div className='side-bar'>
-                <p style={{padding:'0 25px',margin:'30px auto',cursor:'pointer'}} onClick={() => setResume(!resume)}  ><FontAwesomeIcon icon={faArrowLeft}/> Courses</p>
-                    <div className='ml-5'>
-                        <h2>Intro to Blockchain</h2>
-                    {
-                    duration.map(period => <div>
-                        <h3>{period.week}</h3>
-                        <p>{period.module1}</p>
-                        <p>{period.module2}</p>
-                        <p>{period.module3}</p>
-                    </div>)
-                     }
-                    </div>
+                <Sidebar/>
             </div>
             <div className='course-progress'>
                 <div className='module'>
-                <div  style={{ display: resume ? 'none' : 'block' }}>
+                <div>
                 <div className="module-header">
                     <div style={{height:'200px',width:'200px'}}>
                     <CircularProgressbarWithChildren value={75}>
@@ -42,7 +34,7 @@ const CourseInfo = () => {
                     <div className="ml-4">
                         <h1>Welcome back <br /> Shot</h1>
                         <p>75% Completed</p>
-                        <button className='btn btn-primary' onClick={() => setResume(!resume)}>Resume</button>
+                        <button className='btn btn-primary'>Resume</button>
                     </div>
                     </div>
                     <div className='modules-list'>
@@ -58,11 +50,13 @@ const CourseInfo = () => {
                             </li>
                         </ul>
                         {
-                                tutorialdata.map(module => <div className="single-module">
+                                tutorialdata.map((module,index) => <div key={index} className="single-module">
                                     <div className='module-card'>
                                     <p className='text-right m-2'>Completed</p>
                                     <div>
-                                        <h3>{module.name}</h3>
+                                        <h3 className='module-title' onClick={()=>handlemodule(module.id)}>
+                                           <Link to={`/weeks/${module.id}`}> {module.name}</Link>
+                                        </h3>
                                         <progress max="100" value="100" style={{width:'300px',height:'3px'}}></progress>
                                         <p>100% Completed</p>
                                     </div>
@@ -70,9 +64,6 @@ const CourseInfo = () => {
                                 </div>)
                         }
                     </div>
-                </div>
-                <div  style={{ display: resume ? 'block' : 'none' }} >
-                         <Tutorials/>
                 </div>
                 </div>
             </div>
